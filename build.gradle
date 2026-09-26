@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.uniapp'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.mysql:mysql-connector-j:8.4.0'
+}
+
+application {
+    mainClass = 'com.uniapp.applicationmanager.Driver'
+}
+
+test {
+    useJUnitPlatform()
+}
