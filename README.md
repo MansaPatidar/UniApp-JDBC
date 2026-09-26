@@ -73,7 +73,7 @@ This academic project implements the following requirements:
 ## Architecture
 
 ```
-src/main/java/HW8_Applications/
+src/main/java/com/uniapp/applicationmanager/
 ├── model/                    # Data model classes
 │   ├── User.java            # Base user class
 │   ├── Applicant.java       # Applicant with Program enum
@@ -109,7 +109,7 @@ The application connects to:
 - **Host**: localhost
 - **Port**: 3306
 - **User**: root
-- **Database**: cs5200
+- **Database**: uniapp_db
 
 ---
 
@@ -117,7 +117,7 @@ The application connects to:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/UniApp-JDBC.git
+git clone https://github.com/MansaPatidar/UniApp-JDBC.git
 cd UniApp-JDBC
 ```
 
@@ -125,7 +125,7 @@ cd UniApp-JDBC
 Ensure MySQL is running and create the database (Driver will auto-create tables):
 ```bash
 mysql -u root -p
-mysql> CREATE DATABASE cs5200;
+mysql> CREATE DATABASE uniapp_db;
 ```
 
 ### 3. Set Environment Variable
